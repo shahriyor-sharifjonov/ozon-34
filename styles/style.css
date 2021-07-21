@@ -32,6 +32,78 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #00498D;
 }
+
+.mybtnn{
+  padding: 6px 12px;
+  border: none;
+}
+
+.secbtn{
+  background: #fff; 
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07); 
+  font-size: 12px; 
+  margin-top: 8px; 
+  max-width: 250px; 
+  width: 100%; 
+  border-radius: 6px; 
+  display: flex; 
+  align-items: center;
+  transition: 200ms ease;
+}
+
+.secbtn:hover{
+  background: #00498D;
+}
+
+.secbtn:hover p{
+  color: #fff;
+}
+
+.secbtn:hover .secbtn__icon{
+  background: #fff;
+}
+
+.secbtn:hover svg{
+  fill: #00498D;
+}
+
+.secbtn__icon{
+  margin-right: 15px; 
+  background: #00498D; 
+  border-radius: 4px; 
+  min-width: 25px; 
+  height: 25px;
+  transition: 200ms ease;
+}
+
+.secbtn__icon svg{
+  fill: #fff;
+  transition: 200ms ease;
+}
+
+.secbtn__p{
+  transition: 200ms ease;
+}
+
+.mybtnn:focus,
+.mybtn:focus{
+  outline: none;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.header__title{
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #494A4A;
+}
 .content{
   background: #fff;
   border-radius: 6px;
@@ -81,6 +153,23 @@ body{
   margin-bottom: -25px;
 }
 
+.primbtn{
+  background: #00498D; 
+  margin-top: 8px; 
+  max-width: 250px; 
+  width: 100%; 
+  border-radius: 6px; 
+  margin-bottom: 27px;
+  transition: 200ms ease;
+  color: #fff;
+  font-weight: 600;
+}
+
+.primbtn:hover{
+  background: #fff; 
+  color: #00498D;
+}
+
 .aside__item{
   display: flex;
   flex-direction: column;
@@ -89,7 +178,6 @@ body{
 }
 
 .translate-p{
-  max-width: 77px;
   width: 100%;
   text-align: center;
 }
@@ -104,7 +192,7 @@ body{
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
-  color: #8B8B8B;
+  color: #222;
 }
 
 .item{
@@ -118,8 +206,91 @@ body{
   background: #fff;
   border-radius: 6px;
   cursor: pointer;
+  position: relative;
+}
+.item.current.indicator-red:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E75E5E;
+  width: 8px;
+  height: 8px;
+}
+.item.current.indicator-green:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00C48C;
+  width: 8px;
+  height: 8px;
+}
+.item.current.indicator-transparent:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  width: 8px;
+  height: 8px;
 }
 .item.current{
+  border: 2px solid #00498D;
+}
+.item-2{
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative; 
+}
+.item-2.current.indicator-red:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E75E5E;
+  width: 8px;
+  height: 8px;
+}
+.item-2.current.indicator-green:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00C48C;
+  width: 8px;
+  height: 8px;
+}
+.item-2.current.indicator-transparent:before{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  width: 8px;
+  height: 8px;
+}
+.item-2.current{
   border: 2px solid #00498D;
 }
 .mybtn{
@@ -136,6 +307,30 @@ body{
   outline: none; 
   position: absolute; 
   bottom: 0;
+  font-weight: 500;
+  transition: 200ms ease;
+}
+.mybtn:hover{
+  background: #00C48C;
+}
+.mybtn p{
+  transition: 200ms ease;
+}
+.mybtn__icon{
+  transition: 200ms ease; 
+}
+.mybtn:hover p{
+  color: #fff;
+}
+.mybtn:hover svg{
+  fill: #00C48C;
+}
+.mybtn:hover .mybtn__icon{
+  background: #fff;
+}
+.mybtn svg{
+  fill: #fff;
+  transition: 200ms ease;
 }
 
 @media (max-width:1200px){
