@@ -38,11 +38,18 @@ const in6 = document.querySelector('.input-6').value;
 res1 = in6.length;
 sym1.innerHTML = "Всего " + res1 + " знаков"
 
-document.addEventListener('keydown', ()=>{
+// document.addEventListener('keydown', ()=>{
+//   const in6 = document.querySelector('.input-6').value;
+//   res1 = in6.length;
+//   sym1.innerHTML = "Всего " + res1 + " знаков"
+// })
+
+const interval = setInterval(function() {
   const in6 = document.querySelector('.input-6').value;
   res1 = in6.length;
   sym1.innerHTML = "Всего " + res1 + " знаков"
-})
+}, 100);
+
 
 
 const sy2 = document.querySelector('.symbols-2');
@@ -51,11 +58,19 @@ const i7 = document.querySelector('.in-7').value;
 res2 = i7.length;
 sy2.innerHTML = "Всего " + res2 + " знаков"
 
-document.addEventListener('keydown', ()=>{
+// document.addEventListener('keydown', ()=>{
+//   const i7 = document.querySelector('.in-7').value;
+//   res2 = i7.length;
+//   sy2.innerHTML = "Всего " + res2 + " знаков"
+// })
+
+const interval1 = setInterval(function() {
   const i7 = document.querySelector('.in-7').value;
   res2 = i7.length;
   sy2.innerHTML = "Всего " + res2 + " знаков"
-})
+}, 100);
+
+
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({
