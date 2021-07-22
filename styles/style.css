@@ -85,6 +85,45 @@ body{
   transition: 200ms ease;
 }
 
+.dropdown-menu{
+  max-width: 100%;
+  width: 100%;
+}
+
+.dropdown-item{
+  font-size: 14px;
+  padding-left: 0; 
+  padding-right: 0; 
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.drop__img{
+  margin: 5px 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#dropdownMenuButton1{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;    
+  color: #494A4A;  
+  margin-right: 4px;
+  margin-left: 15px;
+}
+
+button{
+  border: none;
+  background: none;
+}
+
+button:focus{
+  outline: none;
+}
+
 .mybtnn:focus,
 .mybtn:focus{
   outline: none;
@@ -96,6 +135,7 @@ body{
   align-items: center;
   padding-top: 30px;
   padding-left: 15px;
+  height: 60px;
 }
 .header__title{
   margin-bottom: 0;

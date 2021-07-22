@@ -38,11 +38,15 @@ const in6 = document.querySelector('.input-6').value;
 res1 = in6.length;
 sym1.innerHTML = "Всего " + res1 + " знаков"
 
-// document.addEventListener('keydown', ()=>{
-//   const in6 = document.querySelector('.input-6').value;
-//   res1 = in6.length;
-//   sym1.innerHTML = "Всего " + res1 + " знаков"
-// })
+function dropdown(val) {
+  var y = document.getElementsByClassName('header__title');
+  var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; 
+}
+
+function dropdown2(value) {
+  var x = document.getElementsByClassName('p1');
+  var aNode = x[0].innerHTML = value + ' <span class="caret2"></span>'; 
+}
 
 const interval = setInterval(function() {
   const in6 = document.querySelector('.input-6').value;
@@ -57,12 +61,6 @@ const i7 = document.querySelector('.in-7').value;
 
 res2 = i7.length;
 sy2.innerHTML = "Всего " + res2 + " знаков"
-
-// document.addEventListener('keydown', ()=>{
-//   const i7 = document.querySelector('.in-7').value;
-//   res2 = i7.length;
-//   sy2.innerHTML = "Всего " + res2 + " знаков"
-// })
 
 const interval1 = setInterval(function() {
   const i7 = document.querySelector('.in-7').value;

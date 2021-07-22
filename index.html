@@ -11,8 +11,29 @@
 </head>
 <body>
   <div class="row header">
-    <img src="images/ozon.png" alt="ozon" class="header__img">
-    <button class="header__title dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Название источника</button>
+    <div class="dropdown">
+      <button id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle p1">
+        <img src="images/ozon.png" alt="ozon" class="header__img"><span class="caret2"></span>
+      </button>
+      <ul class="dropdown-menu" value="">
+        <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/ozon.png" alt="ozon" class="header__img"></img></li>
+        <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/google.png" alt="ozon" class="header__img"></img></li>
+        <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/promt.png" alt="ozon" class="header__img"></img></li>
+        <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/yandex.png" alt="ozon" class="header__img"></img></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="header__title dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Название источника">Название источника
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" value="Название источника">
+        <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 1</li>
+        <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 2</li>
+        <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 3</li>
+        <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 4</li>
+        <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 5</li>
+      </ul>
+    </div>
   </div>
   <div class="row main">
     <div class="content">
