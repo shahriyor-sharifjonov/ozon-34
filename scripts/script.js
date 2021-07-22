@@ -33,51 +33,27 @@ $('.item-2').click(function(){
 })
 
 const sym1 = document.querySelector('.symbols-1');
-const in1 = document.querySelector('.input-1').value;
-const in2 = document.querySelector('.input-2').value;
-const in3 = document.querySelector('.input-3').value;
-const in4 = document.querySelector('.input-4').value;
-const in5 = document.querySelector('.input-5').value;
 const in6 = document.querySelector('.input-6').value;
-const in7 = document.querySelector('.input-7').value;
 
-res1 = in1.length + in2.length + in3.length + in4.length + in5.length + in6.length + in7.length;
+res1 = in6.length;
 sym1.innerHTML = "Всего " + res1 + " знаков"
 
 document.addEventListener('keydown', ()=>{
-  const in1 = document.querySelector('.input-1').value;
-  const in2 = document.querySelector('.input-2').value;
-  const in3 = document.querySelector('.input-3').value;
-  const in4 = document.querySelector('.input-4').value;
-  const in5 = document.querySelector('.input-5').value;
   const in6 = document.querySelector('.input-6').value;
-  const in7 = document.querySelector('.input-7').value;
-  res1 = in1.length + in2.length + in3.length + in4.length + in5.length + in6.length + in7.length;
+  res1 = in6.length;
   sym1.innerHTML = "Всего " + res1 + " знаков"
 })
 
 
 const sy2 = document.querySelector('.symbols-2');
-const i1 = document.querySelector('.in-1').value;
-const i2 = document.querySelector('.in-2').value;
-const i3 = document.querySelector('.in-3').value;
-const i4 = document.querySelector('.in-4').value;
-const i5 = document.querySelector('.in-5').value;
-const i6 = document.querySelector('.in-6').value;
 const i7 = document.querySelector('.in-7').value;
 
-res2 = i1.length + i2.length + i3.length + i4.length + i5.length + i6.length + i7.length;
+res2 = i7.length;
 sy2.innerHTML = "Всего " + res2 + " знаков"
 
 document.addEventListener('keydown', ()=>{
-  const i1 = document.querySelector('.in-1').value;
-  const i2 = document.querySelector('.in-2').value;
-  const i3 = document.querySelector('.in-3').value;
-  const i4 = document.querySelector('.in-4').value;
-  const i5 = document.querySelector('.in-5').value;
-  const i6 = document.querySelector('.in-6').value;
   const i7 = document.querySelector('.in-7').value;
-  res2 = i1.length + i2.length + i3.length + i4.length + i5.length + i6.length + i7.length;
+  res2 = i7.length;
   sy2.innerHTML = "Всего " + res2 + " знаков"
 })
 
