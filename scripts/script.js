@@ -80,3 +80,9 @@ document.addEventListener('keydown', ()=>{
   res2 = i1.length + i2.length + i3.length + i4.length + i5.length + i6.length + i7.length;
   sy2.innerHTML = "Всего " + res2 + " знаков"
 })
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+    delay: { "show": 200, "hide": 10 }
+  })
+})
