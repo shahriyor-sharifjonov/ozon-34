@@ -110,9 +110,13 @@ body{
   padding: 30px 25px 50px;
   max-height: 100%;
   height: 100%;
+  width: calc(50% - 200px);
 }
 .main{
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .fz-14{
   font-size: 14px;
@@ -145,7 +149,7 @@ body{
 .symbols{
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   text-align: right;
   color: #8B8B8B;
@@ -175,6 +179,9 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 180px;
+  width: 100%;
+  height: calc(100vh - 142px);
 }
 
 .translate-p{
@@ -305,7 +312,6 @@ body{
   justify-content: center; 
   padding: 10px;
   outline: none; 
-  position: absolute; 
   bottom: 0;
   font-weight: 500;
   transition: 200ms ease;

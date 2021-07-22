@@ -41,8 +41,8 @@ const in5 = document.querySelector('.input-5').value;
 const in6 = document.querySelector('.input-6').value;
 const in7 = document.querySelector('.input-7').value;
 
-
-sym1.innerHTML = "Всего " + in1.length + " знаков"
+res1 = in1.length + in2.length + in3.length + in4.length + in5.length + in6.length + in7.length;
+sym1.innerHTML = "Всего " + res1 + " знаков"
 
 document.addEventListener('keydown', ()=>{
   const in1 = document.querySelector('.input-1').value;
@@ -66,8 +66,8 @@ const i5 = document.querySelector('.in-5').value;
 const i6 = document.querySelector('.in-6').value;
 const i7 = document.querySelector('.in-7').value;
 
-
-sy2.innerHTML = "Всего " + i1.length + " знаков"
+res2 = i1.length + i2.length + i3.length + i4.length + i5.length + i6.length + i7.length;
+sy2.innerHTML = "Всего " + res2 + " знаков"
 
 document.addEventListener('keydown', ()=>{
   const i1 = document.querySelector('.in-1').value;
