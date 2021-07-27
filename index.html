@@ -15,7 +15,7 @@
       <button id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle p1">
         <img src="images/ozon.png" alt="ozon" class="header__img"><span class="caret2"></span>
       </button>
-      <ul class="dropdown-menu" value="">
+      <ul class="dropdown-menu" placeholder="">
         <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/ozon.png" alt="ozon" class="header__img"></img></li>
         <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/google.png" alt="ozon" class="header__img"></img></li>
         <li class="dropdown-item drop__img" onclick="dropdown2(this.innerHTML);"><img src="images/promt.png" alt="ozon" class="header__img"></img></li>
@@ -23,10 +23,10 @@
       </ul>
     </div>
     <div class="dropdown">
-      <button class="header__title dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Название источника">Название источника
+      <button class="header__title dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Название источника">Название источника
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" value="Название источника">
+      <ul class="dropdown-menu" placeholder="Название источника">
         <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 1</li>
         <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 2</li>
         <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Название источника 3</li>
@@ -44,7 +44,7 @@
           <p class="text-secondary fz-14 text-right">Категория источника</p>
         </div>
         <div class="col-12 col-lg-10 d-flex align-items-center">
-          <input type="text" value="Название категории источника" class="fz-14 title input-1">
+          <input type="text" placeholder="Название категории источника" class="fz-14 title input-1">
         </div>
       </div>
       <div class="row">
@@ -52,7 +52,7 @@
           <p class="text-secondary fz-14 text-right">Заголовок статьи</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Название заголовка статьи на языке оригинала" class="fz-14 title input-2">
+          <input type="text" placeholder="Название заголовка статьи на языке оригинала" class="fz-14 title input-2">
         </div>
       </div>
       <div class="row">
@@ -60,7 +60,7 @@
           <p class="text-secondary fz-14 text-right">Автор статьи</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Anton Luganov" class="fz-14 title input-7">
+          <input type="text" placeholder="Anton Luganov" class="fz-14 title input-7">
         </div>
       </div>
       <div class="row">
@@ -68,7 +68,7 @@
           <p class="text-secondary fz-14 text-right">Title</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Тайтл страницы на языке оригинала" class="fz-14 title input-3">
+          <input type="text" placeholder="Тайтл страницы на языке оригинала" class="fz-14 title input-3">
         </div>
       </div>
       <div class="row">
@@ -76,7 +76,7 @@
           <p class="text-secondary fz-14 text-right">Description</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="3" class="fz-14 title input-4">Description страницы на языке оригинала</textarea>
+          <textarea rows="3" class="fz-14 title input-4" placeholder="Description страницы на языке оригинала"></textarea>
         </div>
       </div>
       <div class="row">
@@ -84,7 +84,7 @@
           <class class="text-secondary fz-14 text-right">КС страницы</class>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="2" class="fz-14 title input-5">КС страницы оригинала</textarea>
+          <textarea rows="2" class="fz-14 title input-5" placeholder="КС страницы оригинала"></textarea>
         </div>
       </div>
       <div class="row">
@@ -92,7 +92,7 @@
           <p class="text-secondary fz-14 text-right">Текст</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="15" class="fz-14 title big-textarea input-6">Текст статьи оригинал</textarea>
+          <textarea rows="15" class="fz-14 title big-textarea input-6" placeholder="Текст статьи оригинал"></textarea>
         </div>
       </div>
       </div>
@@ -115,9 +115,9 @@
       <div class="drops" style="display: flex; max-width: 250px; width: 100%; justify-content: space-between; align-items: center;">
         <div id="myModal" class="" tabindex="-1" role="dialog" aria-hidden="true">
           <select id="mySelect2" style="max-width: 250px; width: 100%; margin-right: 5px; border: none;">
-            <option value="eng">eng</option>
-            <option value="eng">ru</option>
-            <option value="eng">uz</option>
+            <option placeholder="eng">eng</option>
+            <option placeholder="eng">ru</option>
+            <option placeholder="eng">uz</option>
           </select>
         </div>
         <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,9 +133,9 @@
           
         <div id="myModal2" class="" tabindex="-1" role="dialog" aria-hidden="true">
           <select id="mySelect3" style="max-width: 250px; width: 100%; margin-left: 5px; border: none;">
-            <option value="eng">ru</option>
-            <option value="eng">eng</option>
-            <option value="eng">uz</option>
+            <option placeholder="eng">ru</option>
+            <option placeholder="eng">eng</option>
+            <option placeholder="eng">uz</option>
           </select>
         </div>
       </div>
@@ -179,7 +179,7 @@
           <p class="text-secondary fz-14 text-right">Категория источника</p>
         </div>
         <div class="col-12 col-lg-10 d-flex align-items-center">
-          <input type="text" value="Название категории в переводе" class="fz-14 title in-1">
+          <input type="text" placeholder="Название категории в переводе" class="fz-14 title in-1">
         </div>
       </div>
       <div class="row">
@@ -187,7 +187,7 @@
           <p class="text-secondary fz-14 text-right">Заголовок статьи</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Название заголовка статьи в переводе" class="fz-14 title in-2">
+          <input type="text" placeholder="Название заголовка статьи в переводе" class="fz-14 title in-2">
         </div>
       </div>
       <div class="row">
@@ -195,7 +195,7 @@
           <p class="text-secondary fz-14 text-right">Автор статьи</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Anton Luganov" class="fz-14 title in-3">
+          <input type="text" placeholder="Anton Luganov" class="fz-14 title in-3">
         </div>
       </div>
       <div class="row">
@@ -203,7 +203,7 @@
           <p class="text-secondary fz-14 text-right">Title</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <input type="text" value="Тайтл страницы в переводе" class="fz-14 title in-4">
+          <input type="text" placeholder="Тайтл страницы в переводе" class="fz-14 title in-4">
         </div>
       </div>
       <div class="row">
@@ -211,7 +211,7 @@
           <p class="text-secondary fz-14 text-right">Description</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="3" class="fz-14 title in-5">Description статьи в переводе</textarea>
+          <textarea rows="3" class="fz-14 title in-5" placeholder="Description статьи в переводе"></textarea>
         </div>
       </div>
       <div class="row">
@@ -219,7 +219,7 @@
           <p class="text-secondary fz-14 text-right">КС страницы</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="2" class="fz-14 title in-6">КС страницы в переводе</textarea>
+          <textarea rows="2" class="fz-14 title in-6" placeholder="КС страницы в переводе"></textarea>
         </div>
       </div>
       <div class="row">
@@ -227,7 +227,7 @@
           <p class="text-secondary fz-14 text-right">Текст</p>
         </div>
         <div class="col-12 col-lg-10 d-flex">
-          <textarea rows="15" class="fz-14 title big-textarea in-7">Текст статьи в переводе</textarea>
+          <textarea rows="15" class="fz-14 title big-textarea in-7" placeholder="Текст статьи в переводе"></textarea>
         </div>
       </div>
       </div>
@@ -238,8 +238,8 @@
       <div class="drops">
         <div id="myModal3" class="" tabindex="-1" role="dialog" aria-hidden="true">
           <select id="mySelect4" style="max-width: 250px; width: 100%; margin-right: 5px; border: none;">
-            <option value="eng">eng</option>
-            <option value="eng">ru</option>
+            <option placeholder="eng">eng</option>
+            <option placeholder="eng">ru</option>
           </select>
         </div>
         <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,8 +255,8 @@
           
         <div id="myModal4" class="" tabindex="-1" role="dialog" aria-hidden="true">
           <select id="mySelect5" style="max-width: 250px; width: 100%; margin-left: 5px; border: none;">
-            <option value="eng">ru</option>
-            <option value="eng">eng</option>
+            <option placeholder="eng">ru</option>
+            <option placeholder="eng">eng</option>
           </select>
         </div>
       </div>
